@@ -15,6 +15,7 @@
 		6802249C277101DC000BDCBB /* viewcode_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6802249B277101DC000BDCBB /* viewcode_appTests.swift */; };
 		680224A6277101DC000BDCBB /* viewcode_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680224A5277101DC000BDCBB /* viewcode_appUITests.swift */; };
 		680224A8277101DC000BDCBB /* viewcode_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680224A7277101DC000BDCBB /* viewcode_appUITestsLaunchTests.swift */; };
+		6802253427713F12000BDCBB /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6802253327713F12000BDCBB /* LoginScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		680224A1277101DC000BDCBB /* viewcode-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "viewcode-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		680224A5277101DC000BDCBB /* viewcode_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewcode_appUITests.swift; sourceTree = "<group>"; };
 		680224A7277101DC000BDCBB /* viewcode_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewcode_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6802253327713F12000BDCBB /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +99,9 @@
 		68022483277101DA000BDCBB /* viewcode-app */ = {
 			isa = PBXGroup;
 			children = (
+				6802253127713EC4000BDCBB /* Login */,
 				68022486277101DA000BDCBB /* SceneDelegate.swift */,
 				68022484277101DA000BDCBB /* AppDelegate.swift */,
-				68022488277101DA000BDCBB /* ViewController.swift */,
 				6802248D277101DC000BDCBB /* Assets.xcassets */,
 				6802248F277101DC000BDCBB /* LaunchScreen.storyboard */,
 				68022492277101DC000BDCBB /* Info.plist */,
@@ -122,6 +124,23 @@
 				680224A7277101DC000BDCBB /* viewcode_appUITestsLaunchTests.swift */,
 			);
 			path = "viewcode-appUITests";
+			sourceTree = "<group>";
+		};
+		6802253127713EC4000BDCBB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6802253227713EF1000BDCBB /* Screen */,
+				68022488277101DA000BDCBB /* ViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6802253227713EF1000BDCBB /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				6802253327713F12000BDCBB /* LoginScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68022489277101DA000BDCBB /* ViewController.swift in Sources */,
+				6802253427713F12000BDCBB /* LoginScreen.swift in Sources */,
 				68022485277101DA000BDCBB /* AppDelegate.swift in Sources */,
 				68022487277101DA000BDCBB /* SceneDelegate.swift in Sources */,
 			);
