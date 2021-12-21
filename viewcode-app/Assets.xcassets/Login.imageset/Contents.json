@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "logo-com-fundo.png",
+      "filename" : "logo-sem-fundo.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "logo-com-fundo-1.png",
+      "filename" : "logo-sem-fundo-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "logo-com-fundo-2.png",
+      "filename" : "logo-sem-fundo-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
