@@ -57,6 +57,7 @@ class LoginScreen: UIView {
         button.clipsToBounds = true
         button.layer.cornerRadius = 7.5
         button.backgroundColor = UIColor(red: 242.0/255.0, green: 242.0/255.0, blue: 242.0/255.0, alpha: 0.95)
+        button.addTarget(self, action: #selector(@objc method), for: .touchUpInside)
         return button
     }()
     
@@ -73,16 +74,28 @@ class LoginScreen: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        self.backgroundColor = .white
+    
+        self.setUpConstraints()
+        self.configSuperView()
+        
+    }
+    
+    private func configSuperView(){
         self.addSubview(self.logoAppImageView)
         self.addSubview(self.emailTextField)
         self.addSubview(self.passwordTextField)
         self.addSubview(self.loginButton)
         self.addSubview(self.registerButton)
-        
-        self.backgroundColor = .white
-        
-        setUpConstraints()
-        
+    }
+    
+    public func configTextFieldDelegate(delegate:UITextFieldDelegate) {
+        self.emailTextField.delegate = delegate
+        self.passwordTextField.delegate = delegate
+    }
+    
+    @objc private func tappedLoginButton() {
+        printContent("Botão de login!")
     }
     
     required init?(coder: NSCoder) {

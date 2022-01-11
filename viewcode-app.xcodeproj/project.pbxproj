@@ -130,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				6802253227713EF1000BDCBB /* Screen */,
-				68022488277101DA000BDCBB /* ViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -138,6 +137,7 @@
 		6802253227713EF1000BDCBB /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				68022488277101DA000BDCBB /* ViewController.swift */,
 				6802253327713F12000BDCBB /* LoginScreen.swift */,
 			);
 			path = Screen;
